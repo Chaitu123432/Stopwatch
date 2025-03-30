@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Stopwatch</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Stopwatch</h1>
+        
+        <div class="stopwatch">
+            <div class="display">
+                <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>.<span id="milliseconds">00</span>
+            </div>
+            
+            <div class="controls">
+                <button id="start-btn" class="btn"><i class="fas fa-play"></i> Start</button>
+                <button id="pause-btn" class="btn" disabled><i class="fas fa-pause"></i> Pause</button>
+                <button id="reset-btn" class="btn"><i class="fas fa-redo-alt"></i> Reset</button>
+                <button id="lap-btn" class="btn" disabled><i class="fas fa-flag"></i> Lap</button>
+            </div>
+        </div>
+        
+        <div class="lap-container">
+            <h2>Lap Times</h2>
+            <div class="lap-controls">
+                <button id="clear-laps-btn" class="btn btn-small"><i class="fas fa-trash"></i> Clear Laps</button>
+                <button id="export-btn" class="btn btn-small"><i class="fas fa-download"></i> Export</button>
+            </div>
+            <ul id="laps" class="laps-list"></ul>
+        </div>
+        
+        <div class="settings">
+            <h2>Settings</h2>
+            <div class="setting-item">
+                <label for="theme-select">Theme:</label>
+                <select id="theme-select">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+            <div class="setting-item">
+                <label for="sound-toggle">Sound:</label>
+                <input type="checkbox" id="sound-toggle" checked>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Created with <i class="fas fa-heart"></i> | <span id="current-year"></span></p>
+        </footer>
+    </div>
+    
+    <audio id="click-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-simple-countdown-922.mp3" preload="auto"></audio>
+    <audio id="lap-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-unlock-game-notification-253.mp3" preload="auto"></audio>
+    
+    <script src="js/script.js"></script>
+</body>
+</html> 
