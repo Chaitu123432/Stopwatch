@@ -37,6 +37,19 @@ body.blue-theme {
     --container-bg: #2c3e50;
 }
 
+/* Green Theme */
+body.green-theme {
+    --primary-color: #27ae60;
+    --secondary-color: #2ecc71;
+    --text-color: #ecf0f1;
+    --accent-color: #f39c12;
+    --border-color: #7f8c8d;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --button-hover: #219a52;
+    --display-bg: #27ae60;
+    --container-bg: #2c3e50;
+}
+
 * {
     margin: 0;
     padding: 0;

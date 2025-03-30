@@ -26,8 +26,8 @@ let lapTimes = [];
 
 // Initialize settings
 const settings = {
-    theme: localStorage.getItem('theme') || 'light',
     sound: localStorage.getItem('sound') !== 'false',
+    theme: localStorage.getItem('theme') || 'green',
 };
 
 // Initialize the app
